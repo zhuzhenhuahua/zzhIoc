@@ -28,6 +28,7 @@ namespace ZzhIOC.Controllers
 
         public AccountController()
         {
+            //ddd
         }
 
         public AccountController(ApplicationUserManager userManager,
