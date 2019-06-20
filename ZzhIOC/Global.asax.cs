@@ -11,6 +11,7 @@ using System.Reflection;
 using IRepository;
 using Autofac.Integration.WebApi;
 using Autofac.Integration.Mvc;
+using System.Web.Compilation;
 
 namespace ZzhIOC
 {
