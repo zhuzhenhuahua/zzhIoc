@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IRepository;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,8 +9,11 @@ namespace ZzhIOC.Controllers
 {
     public class HomeController : Controller
     {
+        public ITaskRepository taskRepository { get; set; }
         public ActionResult Index()
         {
+            string s = taskRepository.writeTask();
+
             ViewBag.Title = "Home Page";
 
             return View();
