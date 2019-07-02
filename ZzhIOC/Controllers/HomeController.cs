@@ -12,6 +12,7 @@ namespace ZzhIOC.Controllers
         public ITaskRepository taskRepository { get; set; }
         public ActionResult Index()
         {
+            //加个注释
             string s = taskRepository.writeTask();
 
             ViewBag.Title = "Home Page";
